@@ -1,0 +1,10 @@
+version: "4"
+services:
+  db:
+    image: postgis/postgis:13-3.3
+    container_name: "postgres13"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: flowfx
+      POSTGRES_PASSWORD: 'password'
